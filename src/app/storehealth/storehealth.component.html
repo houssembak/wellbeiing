@@ -1,0 +1,67 @@
+  <body>
+    <div class="container">
+      <div class="cart-container">
+        <div class="search">
+          <input type="text" [(ngModel)]="searchTerm" placeholder="Search products by name" (keyup.enter)="searchProducts()">
+          <button (click)="searchProducts()">Search</button>
+        </div>
+        <ul class="cart">
+          <li class="cart-item" *ngFor="let item of items; let i = index">
+            {{ item.name }} : {{ item.price }} DT |
+            <button class="remove-button" (click)="supprimerProduitsDuPanier(i)">Remove</button>
+          </li>
+        </ul>
+        <div *ngIf="items.length === 0" class="empty-cart-message"></div>
+        <div>Total : <span class="cart-total">{{ calculerTotal() }} DT</span></div>
+        <button class="clear-cart-button" (click)="viderPanier()">Clear Cart</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_Oy3WGKKIf3MnnEugk43GN0wT5paNsDbvQ&usqp=CAU" alt="panier" style="width: 50px; height: 50px;">
+      </div>
+   
+    </div>
+    <main>
+      <section class="hero">
+        <h1>🌟 Limited Time Offer: Get Your Favorites Now! 🌟<br></h1>
+  
+        🎉 Don't miss out on our exclusive promotion! For a limited time only, grab incredible discounts on a wide range
+        of products. <br>
+  
+        🛍️ Explore our store today and enjoy:<br>
+  
+        <h4>🔥 Up to 50% off select items!<br></h4>
+        🎁 Special deals on bestselling products!<br>
+  
+  
+        Hurry, these offers won't last forever!<br><br><br>
+        <section class="promo-banner">
+  
+          <div class="promo-text">
+  
+  
+  
+            <a href="promotion">See all offers</a>
+          </div>
+  
+        </section>
+        <br><br><br><br>
+  
+        <h1>Happy shopping! 🛒✨</h1> <br>
+       
+       
+      </section>
+  
+  
+      <h2 >Health products</h2>
+      <section class="featured-products">
+        <div class="product" *ngFor="let healthproduct of healthproducts">
+          <img [src]="healthproduct.imageUrl" alt="{{ healthproduct.name }} " />
+          <h2>{{ healthproduct.name }}</h2>
+          <p>Prix: {{ healthproduct.price }} TND</p>
+          <button (click)="ajouterProduitAuPanier(healthproduct)" >Ajouter au panier</button>
+
+        </div>
+      </section>
+
+    </main>
+    </body>
+
+ 

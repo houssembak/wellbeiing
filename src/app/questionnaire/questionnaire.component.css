@@ -1,0 +1,140 @@
+
+body{
+  background-color: white;
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir tout le formulaire */
+    
+   
+    margin-top: -100px;
+    
+}
+h1{
+  text-align: center;
+  color: #ffffff;
+}
+form{
+  background-color: white;
+  padding: 20px 10px;
+      border-radius: 5px;
+ 
+     
+  
+}
+
+
+/* Ajuster la largeur des éléments div pour occuper 50% de la largeur du formulaire */
+div {
+  /* Couleur de fond avec une opacité pour permettre à l'arrière-plan de l'image de transparaître */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px; 
+  text-align: center;
+
+}
+  
+  p {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  }
+  
+  /* Style des options de réponse */
+  input[type="radio"] {
+    margin-right: 5px;
+    margin-top: 30px;
+    
+   
+  }
+  
+  label {
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+
+    
+  }
+  .next-button{
+    
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    background-color:#ffffff;
+    color: #0fc0df;
+    border: 2px solid #0fc0df; 
+  }
+ 
+  
+  .next-button:hover {
+    background-color:#0fc0df;
+    color: #ffffff;
+    border: none; 
+
+  }
+  .click-button{
+    
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    background-color:#ffffff;
+    color: #0fc0df;
+    border: 2px solid #0fc0df; 
+  }
+ 
+  
+  .click-button:hover {
+    background-color:#0e98b1;
+    color: #ffffff;
+    border: none; 
+
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: -80px; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact, .social-media {
+    flex: 1;
+}
+
+.contact h3, .social-media h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.contact h5 {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media ul li a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Rounded corners for the social media icons */
+}

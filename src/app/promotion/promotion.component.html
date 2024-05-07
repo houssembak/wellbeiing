@@ -1,0 +1,38 @@
+<body>
+  
+    <main>
+        <section class="special-offers">
+            <h1>Harry up ,the special offers are here 🔥​🔥​ </h1>
+            <p>Like bio products ,equipment of sports and exercices! 🎉🎁 A lot of deals u cant resist are here</p>
+            <div  class="offer" *ngFor="let promotion of promotions">
+                <img [src]="promotion.imagepromotion"  />
+                <h2>{{promotion.name}} - Remise de {{promotion.discount}}</h2>
+                <p>Obtenez une réduction de {{promotion.discount}} sur {{promotion.name}}. Profitez de ses performances avancées, de son appareil photo de qualité professionnelle et de son design élégant à un prix incroyable.</p>
+                <p>start date : {{promotion.startdate}}</p>
+                <p>End date : {{promotion.enddate}}</p>
+                <h3>New price : {{promotion.newprice}}</h3>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="contact">
+            <h3>Contact</h3>
+            <h5>Email: contactexample.com</h5>
+            <h5>Téléphone: +123456789</h5>
+        </div>
+        <div class="social-media">
+            <h3>Suivez-nous</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100035186080849&locale=fr_FR"><img
+                            src="https://img.freepik.com/vecteurs-premium/icone-facebook_488108-2.jpg"
+                            alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/votrecompte"><img
+                            src="https://img.freepik.com/premium-vector/modern-logo-instagram-icon-white-background_578229-126.jpg"
+                            alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>

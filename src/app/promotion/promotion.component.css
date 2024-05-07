@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.special-offers {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.offer {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.offer img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.offer h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.offer p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.offer h3 {
+    font-size: 16px;
+    color: #007bff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact,
+.social-media {
+    flex: 1;
+}
+
+.contact h3,
+.social-media h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact h5,
+.social-media h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media ul li a img {
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-media ul li a img:hover {
+    transform: scale(1.2);
+}
